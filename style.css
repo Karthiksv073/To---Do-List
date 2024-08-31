@@ -1,0 +1,69 @@
+*{
+    padding:10px;
+    margin:10px;
+}
+body{
+    background-color: #2B2D42;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+main{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+header{
+    background-color: #8D99AE;
+    height: 10vh;
+    border: 10px solid #8D99AE;
+    border-radius:20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+h1{
+    font-size: 5em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    animation: heading_animation 10s ease-in-out 5 alternate;
+}
+#addTaskBtn{
+    background-color: #333;
+    width:10em;
+    height:3em;
+    font-size:1.2em;
+    border: 5px inset #8D99AE;
+    border-radius:20px;
+    color: #EDF2F4;
+    font-weight:bolder;
+    font-family:'Times New Roman', Times, serif;
+}
+#addTaskBtn:active{
+    border-color:rgb(220, 64, 7);
+}
+.class_1{
+    width:85%;
+    height:2em;
+    background-color: #8D99AE;
+    border-radius:5em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.DelBtn{
+    background-color:  #2B2D42;
+    border:none;
+    border-radius: 30em;
+    color:red;
+    font-size:2em;
+}
+@keyframes heading_animation{
+    from{
+        transform: translateX(0em);
+        color:#000000;
+    }
+    to{
+        transform: translateX(55vw);
+        color: #8D99AE;
+    }
+}
